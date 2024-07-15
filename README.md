@@ -9,13 +9,15 @@
 
 ## Description
 
-Button Filters for Elementor is a plugin designed to extend the functionality of Elementor by allowing users to add additional attributes to button elements. These attributes are controlled through settings in Advanced Custom Fields (ACF), providing flexibility in customizing button behaviors and appearances within Elementor-built pages.
+Button Filters for Elementor is a plugin designed to extend the functionality of Elementor by enabling additional, customizable attributes for button elements to act as toggleable filters.
+These attributes are controlled through settings in Advanced Custom Fields (ACF).
+The filter buttons can interact with a loop grid on the same page, dynamically updating the displayed content. Users can easily toggle filters on and off, providing a dynamic and interactive browsing experience.
 
 ## Installation
 
 1. Upload the `button-filter-for-elementor` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Utilize the enhanced button attributes within the Elementor editor by configuring settings in the Advanced Custom Fields (ACF) interface.
+3. .. More information on the installation of the filter coming soon.
 
 ## Changelog
 
@@ -25,4 +27,3 @@ Button Filters for Elementor is a plugin designed to extend the functionality of
 ## License
 
 Button Filters for Elementor is licensed under the GPL-2.0+ License. See [GPL-2.0 License](https://www.gnu.org/licenses/gpl-2.0.html) for more details.
-
