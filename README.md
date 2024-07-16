@@ -2,7 +2,7 @@
 
 **Plugin Name:** Button Filters for Elementor  
 **Description:** A custom Elementor plugin that adds extra attributes to button elements based on ACF settings.  
-**Version:** 1.0.0  
+**Version:** 0.1.2
 **Author:** Mart-Jan Koedam  
 **License:** GPL v2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html
@@ -21,7 +21,19 @@ The filter buttons can interact with a loop grid on the same page, dynamically u
 
 ## Changelog
 
-### 1.0.0
+### 0.1.2
+
+- Fixed the issue where ACF fields do not load in correctly.
+- When a new Post Type is selected, the existing fields options get cleared immediately.
+- Fixed version numbers.
+
+### 0.1.1
+- Refactored and reorganized the code for better readability and structure.
+- Improved the script loading process and localized script data for AJAX calls.
+- Added comments and documentation throughout the code.
+- Enhanced error handling in the AJAX callback function.
+
+### 0.1.0
 - Initial release of Button Filters for Elementor plugin.
 
 ## License

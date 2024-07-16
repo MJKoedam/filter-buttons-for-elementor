@@ -44,8 +44,8 @@ class Elementor_Custom_Button_Attribute {
 
                         foreach ($group_fields as $field) {
                             $fields[] = [
-                                'id' => $field['key'],
-                                'text' => $field['label'],
+                                'key' => $field['key'],
+                                'label' => $field['label'],
                                 // Add more fields as needed
                             ];
                         }

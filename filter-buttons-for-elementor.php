@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Button Filters for Elementor
  * Description: A custom Elementor plugin that adds extra attributes to button elements based on ACF settings.
- * Version: 1.0.0
+ * Version: 0.1.2
  * Author: Mart-Jan Koedam
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html

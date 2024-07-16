@@ -2,7 +2,7 @@
  * Custom Options Handler for Elementor Button Widget
  *
  * This script dynamically populates ACF (Advanced Custom Fields) options based on the selected
- * custom post type within Elementor's button widget settings(in the editor). It listens for changes in the
+ * custom post type within Elementor's button widget settings (in the editor). It listens for changes in the
  * custom post type select field, triggers an AJAX request to fetch ACF field groups and their
  * respective fields, and updates the custom ACF field select options accordingly.
  **/
@@ -12,6 +12,10 @@ jQuery(document).ready(function($) {
         // Get the selected custom post type value
         var selectedPostType = $(this).val();
         console.log('Selected Custom Post Type:', selectedPostType);
+
+        // Select the custom ACF field select element and clear existing options
+        var selectElement = $('.elementor-control-custom_acf_field select');
+        selectElement.empty(); // Clear existing options
 
         // Trigger AJAX to fetch ACF fields based on selected post type
         if (selectedPostType) {
@@ -31,10 +35,6 @@ jQuery(document).ready(function($) {
                         var acfFields = response.data.groups.flatMap(group =>
                             group.fields.map(field => ({ id: field.key, text: field.label }))
                         );
-
-                        // Update custom_acf_field select options
-                        var selectElement = $('.elementor-control-custom_acf_field select');
-                        selectElement.empty(); // Clear existing options
 
                         // Append new options to custom_acf_field select
                         acfFields.forEach(option => {
